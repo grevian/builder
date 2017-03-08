@@ -1,5 +1,6 @@
 import 'dart:html';
 import 'dart:convert';
+import 'game/game.dart';
 import 'package:stagexl/stagexl.dart';
 
 void main() {
@@ -42,6 +43,8 @@ void main() {
         renderLoop.juggler.add(tween);
       }
     }
+
+    GameObject go = new GameObject.Initialize(resourceManager, stage);
 
   });
 
